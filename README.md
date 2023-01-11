@@ -29,7 +29,7 @@ module "external-secrets" {
       data:
         - secretKey: tls-default
           remoteRef:
-            key: k8s/haproxy/certs
+            key: k8s/ingress-nginx/certs
             property: tls-star-example-com
       EOT
       SECRET_DATAFROM     = ""
